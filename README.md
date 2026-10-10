@@ -35,7 +35,7 @@ flowchart LR
 ## Repository layout
 
 ```
-GA_wcdm_paper/
+GA-MCMC_pipeline/
 ├── README.md                 # this file
 ├── LICENSE / CITATION.cff
 ├── class/                    # CLASS + GA Python pipeline
