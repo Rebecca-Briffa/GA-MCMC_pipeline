@@ -1,0 +1,63 @@
+# Interactive GA pod (same pattern as ftclass-pod-max: sleep + exec in)
+#
+# 1. Push image (on laptop):
+#      docker tag ga-wdm:latest ghcr.io/rebecca-briffa/ga-wdm:latest
+#      docker push ghcr.io/rebecca-briffa/ga-wdm:latest
+#
+# 2. Apply config + pod:
+#      kubectl apply -f docker/k8s/ga-config.yaml
+#      kubectl apply -f docker/k8s/ga-pod-interactive.yaml
+#
+# 3. Shell in:
+#      kubectl exec -it -n cosmic-learning ga-wdm-pod -- bash
+#
+# 4. Inside pod — check GPU + run GA (outputs on PVC):
+#      bash /opt/ga-project/docker/run_ga.sh
+#   Or via entrypoint wrapper:
+#      /opt/ga-project/docker/entrypoint.sh run-ga
+#
+# Or one line from laptop (kubectl exec bypasses ENTRYPOINT — use full path):
+#      kubectl exec -n cosmic-learning ga-wdm-pod -- bash /opt/ga-project/docker/run_ga.sh
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ga-wdm-pod
+  namespace: cosmic-learning
+  labels:
+    app: ga-wdm
+spec:
+  imagePullSecrets:
+    - name: ghcr-secret
+  containers:
+    - name: ga-wdm
+      image: ghcr.io/rebecca-briffa/ga-wdm:latest
+      imagePullPolicy: Always
+      resources:
+        requests:
+          memory: "64Gi"
+          cpu: "16"
+          nvidia.com/gpu: "1"
+          ephemeral-storage: "10Gi"
+        limits:
+          memory: "128Gi"
+          cpu: "32"
+          nvidia.com/gpu: "1"
+          ephemeral-storage: "20Gi"
+      envFrom:
+        - configMapRef:
+            name: ga-wdm-config
+      env:
+        - name: NVIDIA_VISIBLE_DEVICES
+          value: "all"
+      securityContext:
+        runAsUser: 0
+      command: ["sleep", "infinity"]
+      volumeMounts:
+        - mountPath: /mnt
+          name: data
+  volumes:
+    - name: data
+      persistentVolumeClaim:
+        claimName: class-pvc
+  restartPolicy: Never

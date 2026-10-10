@@ -1,0 +1,34 @@
+/* user_eq.txt — coeff×shape free combination */
+/* coeffs: w0, wa, w2, w3, w4, w5, w6 */
+/* shapes: const, 1ma, 1ma2, a1ma, loga, 1ma3, a2, 1ma4 */
+/* #define FLUID_W_FLD(a, w0, wa, w2, w3, w4, w5, w6) (...) */
+
+MODEL=wCDM
+EXPR=w0
+
+MODEL=CPL
+EXPR=w0+wa*(1-a)
+
+MODEL=JBP
+EXPR=w0+w2*a*(1-a)
+
+MODEL=poly2
+EXPR=w0+wa*(1-a)+w2*a*(1-a)
+
+MODEL=log
+EXPR=w0+w4*log(a)
+
+MODEL=mask_2p_10000000000000000000100000000000000000000000000000000000
+EXPR=w0+w2*log(a)
+
+MODEL=mask_2p_10000000000000100000000000000000000000000000000000000000
+EXPR=w0+wa*a^2
+
+MODEL=mask_7p_10000000000000000000000000000000000110000000001001100100
+EXPR=w0+w4*a*(1-a)+w4*log(a)+w5*a^2+w6*(1-a)+w6*(1-a)^2+w6*(1-a)^3
+
+MODEL=mask_8p_10000100000000010000000000001000000001010000000011000000
+EXPR=w0+w0*(1-a)^3+wa*(1-a)^4+w3*log(a)+w4*(1-a)^3+w4*(1-a)^4+w6+w6*(1-a)
+
+MODEL=mask_2p_10000000000000000010000000000000000000000000000000000000
+EXPR=w0+w2*(1-a)^2

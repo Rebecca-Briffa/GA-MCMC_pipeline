@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "GA w(a) discovery pipeline"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Briffa
+    given-names: Rebecca
+abstract: >-
+  Genetic-algorithm search for dynamical dark-energy equations of state w(a)
+  using CLASS, Cobaya, and CLiENT, with DIC fitness and posterior-constraint
+  gates on Pantheon+SH0ES + DESI DR2 data.
+keywords:
+  - cosmology
+  - dark energy
+  - genetic algorithm
+  - CLASS
+  - Cobaya
+  - CLiENT
+license: MIT
+repository-code: "https://github.com/Rebecca-Briffa/GA_wcdm_paper"

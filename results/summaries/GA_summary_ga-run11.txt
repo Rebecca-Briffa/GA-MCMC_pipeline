@@ -1,0 +1,336 @@
+
+==========================================================================================
+# Generation 0  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_0_model_0   1479.0120    1538.0341    8      success    client             w(a)=w0+wa*(1-a)
+gen_0_model_1   1479.3119    1538.3340    8      success    client             w(a)=w0+w2*a*(1-a)
+gen_0_model_2   1477.8353    1544.2351    9      success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)
+gen_0_model_3   1478.5315    1537.5536    8      success    client             w(a)=w0+w3*(1-a)^2
+gen_0_model_4   1477.8344    1544.2343    9      success    client             w(a)=w0+wa*(1-a)+w4*a*(1-a)^2
+gen_0_model_5   1477.5096    1558.6650    11     success    client             w(a)=w0+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_0_model_6   1477.3621    1558.5174    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_0_model_7   1481.1186    1540.1407    8      success    client             w(a)=w0+w6*a^2*(1-a)
+gen_0_model_8   1474.6539    1555.8092    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3
+gen_0_model_9   1478.1107    1551.8883    10     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w6*a^2*(1-a)
+
+==========================================================================================
+# Generation 1  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_1_model_0   1478.5315    1537.5536    8      success    client             w(a)=w0+w3*(1-a)^2
+gen_1_model_1   1469.9484    1551.1038    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_1_model_2   1474.6539    1555.8092    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3
+gen_1_model_3   1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_1_model_4   1477.0977    1558.2531    11     success    client             w(a)=w0+wa*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_1_model_5   1468.0801    1549.2355    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w6*a^2*(1-a)
+gen_1_model_6   1477.6360    1558.7913    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3
+gen_1_model_7   1476.1804    1557.3358    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_1_model_8   1476.7546    1557.9099    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_1_model_9   1476.1406    1549.9182    10     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w6*a^2*(1-a)
+
+==========================================================================================
+# Generation 2  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_2_model_0   1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_2_model_1   1467.6034    1548.7588    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2
+gen_2_model_2   1477.1147    1558.2701    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_2_model_3   1476.1804    1557.3358    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_2_model_4   1477.5096    1558.6650    11     success    client             w(a)=w0+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_2_model_5   1477.0977    1558.2531    11     success    client             w(a)=w0+wa*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_2_model_6   1464.2102    1545.3656    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_2_model_7   1468.0801    1549.2355    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w6*a^2*(1-a)
+gen_2_model_8   1476.7546    1557.9099    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_2_model_9   1477.3094    1558.4648    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+
+==========================================================================================
+# Generation 3  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_3_model_0   1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_3_model_1   1477.6360    1558.7913    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3
+gen_3_model_2   1467.6034    1548.7588    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2
+gen_3_model_3   1477.0977    1558.2531    11     success    client             w(a)=w0+wa*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_3_model_4   1477.5096    1558.6650    11     success    client             w(a)=w0+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_3_model_5   1477.3094    1558.4648    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_3_model_6   1468.0801    1549.2355    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w6*a^2*(1-a)
+gen_3_model_7   1469.9484    1551.1038    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_3_model_8   1464.2102    1545.3656    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_3_model_9   1476.6580    1557.8134    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+
+==========================================================================================
+# Generation 4  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_4_model_0   1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_4_model_1   1477.3094    1558.4648    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_4_model_2   1469.9484    1551.1038    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_4_model_3   1477.0977    1558.2531    11     success    client             w(a)=w0+wa*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_4_model_4   1477.1147    1558.2701    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_4_model_5   1476.9750    1550.7526    10     success    client             w(a)=w0+wa*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3
+gen_4_model_6   1476.6580    1557.8134    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_4_model_7   1476.1804    1557.3358    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_4_model_8   1477.3539    1551.1315    10     success    client             w(a)=w0+wa*(1-a)+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_4_model_9   1477.5096    1558.6650    11     success    client             w(a)=w0+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+
+==========================================================================================
+# Generation 5  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_5_model_0   1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_5_model_1   1477.1147    1558.2701    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_5_model_2   1476.6580    1557.8134    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_5_model_3   1477.0977    1558.2531    11     success    client             w(a)=w0+wa*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_5_model_4   1476.1804    1557.3358    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_5_model_5   1477.5096    1558.6650    11     success    client             w(a)=w0+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_5_model_6   1477.6360    1558.7913    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3
+gen_5_model_7   1474.6539    1555.8092    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3
+gen_5_model_8   1467.6034    1548.7588    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2
+gen_5_model_9   1477.3094    1558.4648    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+
+==========================================================================================
+# Generation 6  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_6_model_0   1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_6_model_1   1477.1147    1558.2701    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_6_model_2   1477.3094    1558.4648    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_6_model_3   1477.5096    1558.6650    11     success    client             w(a)=w0+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_6_model_4   1477.0977    1558.2531    11     success    client             w(a)=w0+wa*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_6_model_5   1476.1804    1557.3358    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_6_model_6   1474.6539    1555.8092    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3
+gen_6_model_7   1477.1572    1550.9348    10     success    client             w(a)=w0+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3
+gen_6_model_8   1475.3893    1549.1669    10     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w5*(1-a)^3
+gen_6_model_9   1477.6360    1558.7913    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3
+
+==========================================================================================
+# Generation 7  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_7_model_0   1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_7_model_1   1476.6580    1557.8134    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_7_model_2   1477.5096    1558.6650    11     success    client             w(a)=w0+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_7_model_3   1477.3621    1558.5174    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_7_model_4   1477.1147    1558.2701    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_7_model_5   1478.5218    1559.6772    11     success    client             w(a)=w0+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_7_model_6   1464.2102    1545.3656    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_7_model_7   1467.6034    1548.7588    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2
+gen_7_model_8   1468.0801    1549.2355    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w6*a^2*(1-a)
+gen_7_model_9   1477.0977    1558.2531    11     success    client             w(a)=w0+wa*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+
+==========================================================================================
+# Generation 8  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_8_model_0   1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_8_model_1   1468.0801    1549.2355    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w6*a^2*(1-a)
+gen_8_model_2   1469.9484    1551.1038    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_8_model_3   1467.6034    1548.7588    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2
+gen_8_model_4   1476.7546    1557.9099    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_8_model_5   1476.6580    1557.8134    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_8_model_6   1464.2102    1545.3656    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_8_model_7   1478.0702    1551.8478    10     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2
+gen_8_model_8   1477.1147    1558.2701    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_8_model_9   1477.3094    1558.4648    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+
+==========================================================================================
+# Generation 9  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_9_model_0   1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_9_model_1   1477.5096    1558.6650    11     success    client             w(a)=w0+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_9_model_2   1477.6360    1558.7913    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3
+gen_9_model_3   1477.0977    1558.2531    11     success    client             w(a)=w0+wa*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_9_model_4   1468.0801    1549.2355    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w6*a^2*(1-a)
+gen_9_model_5   1474.6539    1555.8092    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3
+gen_9_model_6   1476.6580    1557.8134    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_9_model_7   1477.1147    1558.2701    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_9_model_8   1477.3539    1551.1315    10     success    client             w(a)=w0+wa*(1-a)+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_9_model_9   1469.9484    1551.1038    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+
+==========================================================================================
+# Generation 10  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_10_model_0  1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_10_model_1  1464.2102    1545.3656    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_10_model_2  1476.6580    1557.8134    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_10_model_3  1477.5096    1558.6650    11     success    client             w(a)=w0+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_10_model_4  1476.7546    1557.9099    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_10_model_5  1477.0977    1558.2531    11     success    client             w(a)=w0+wa*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_10_model_6  1474.6539    1555.8092    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3
+gen_10_model_7  1476.8018    1550.5794    10     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3
+gen_10_model_8  1477.3094    1558.4648    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_10_model_9  1477.6360    1558.7913    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3
+
+==========================================================================================
+# Generation 11  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_11_model_0  1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_11_model_1  1467.6034    1548.7588    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2
+gen_11_model_2  1477.6360    1558.7913    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3
+gen_11_model_3  1477.5096    1558.6650    11     success    client             w(a)=w0+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_11_model_4  1469.9484    1551.1038    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_11_model_5  1477.0977    1558.2531    11     success    client             w(a)=w0+wa*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_11_model_6  1464.2102    1545.3656    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_11_model_7  1476.7546    1557.9099    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_11_model_8  1476.1804    1557.3358    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_11_model_9  1477.1147    1558.2701    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+
+==========================================================================================
+# Generation 12  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_12_model_0  1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_12_model_1  1477.3094    1558.4648    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_12_model_2  1477.5096    1558.6650    11     success    client             w(a)=w0+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_12_model_3  1477.0977    1558.2531    11     success    client             w(a)=w0+wa*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_12_model_4  1476.7546    1557.9099    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_12_model_5  1464.2102    1545.3656    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_12_model_6  1477.3621    1558.5174    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_12_model_7  1468.0801    1549.2355    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w6*a^2*(1-a)
+gen_12_model_8  1477.1147    1558.2701    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_12_model_9  1476.6580    1557.8134    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+
+==========================================================================================
+# Generation 13  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_13_model_0  1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_13_model_1  1476.7546    1557.9099    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_13_model_2  1478.5218    1559.6772    11     success    client             w(a)=w0+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_13_model_3  1476.1804    1557.3358    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_13_model_4  1464.2102    1545.3656    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_13_model_5  1474.4685    1548.2460    10     success    client             w(a)=w0+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_13_model_6  1476.6580    1557.8134    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_13_model_7  1474.6539    1555.8092    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3
+gen_13_model_8  1477.3621    1558.5174    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_13_model_9  1467.6034    1548.7588    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2
+
+==========================================================================================
+# Generation 14  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_14_model_0  1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_14_model_1  1464.2102    1545.3656    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_14_model_2  1468.0801    1549.2355    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w6*a^2*(1-a)
+gen_14_model_3  1477.3094    1558.4648    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_14_model_4  1477.5096    1558.6650    11     success    client             w(a)=w0+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_14_model_5  1477.6360    1558.7913    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3
+gen_14_model_6  1474.6539    1555.8092    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3
+gen_14_model_7  1467.6034    1548.7588    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2
+gen_14_model_8  1478.5218    1559.6772    11     success    client             w(a)=w0+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_14_model_9  1477.3621    1558.5174    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w6*a^2*(1-a)
+
+==========================================================================================
+# Generation 15  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_15_model_0  1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_15_model_1  1476.1804    1557.3358    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_15_model_2  1477.5096    1558.6650    11     success    client             w(a)=w0+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_15_model_3  1467.6034    1548.7588    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2
+gen_15_model_4  1476.9750    1550.7526    10     success    client             w(a)=w0+wa*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3
+gen_15_model_5  1464.2102    1545.3656    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_15_model_6  1478.5218    1559.6772    11     success    client             w(a)=w0+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_15_model_7  1477.3621    1558.5174    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_15_model_8  1468.0801    1549.2355    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w6*a^2*(1-a)
+gen_15_model_9  1477.7183    1551.4959    10     success    client             w(a)=w0+w2*a*(1-a)+w4*a*(1-a)^2+w6*a^2*(1-a)
+
+==========================================================================================
+# Generation 16  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_16_model_0  1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_16_model_1  1477.1147    1558.2701    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_16_model_2  1477.3094    1558.4648    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_16_model_3  1469.9484    1551.1038    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_16_model_4  1476.6580    1557.8134    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_16_model_5  1476.1804    1557.3358    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_16_model_6  1474.6539    1555.8092    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3
+gen_16_model_7  1476.7546    1557.9099    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_16_model_8  1478.5218    1559.6772    11     success    client             w(a)=w0+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_16_model_9  1477.6360    1558.7913    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3
+
+==========================================================================================
+# Generation 17  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_17_model_0  1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_17_model_1  1476.6580    1557.8134    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_17_model_2  1469.9484    1551.1038    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_17_model_3  1477.3094    1558.4648    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_17_model_4  1478.5218    1559.6772    11     success    client             w(a)=w0+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_17_model_5  1464.2102    1545.3656    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_17_model_6  1477.3621    1558.5174    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_17_model_7  1476.1804    1557.3358    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_17_model_8  1468.0801    1549.2355    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w6*a^2*(1-a)
+gen_17_model_9  1474.6539    1555.8092    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3
+
+==========================================================================================
+# Generation 18  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_18_model_0  1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_18_model_1  1477.6360    1558.7913    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3
+gen_18_model_2  1474.6539    1555.8092    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3
+gen_18_model_3  1464.2102    1545.3656    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_18_model_4  1476.1804    1557.3358    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_18_model_5  1477.5096    1558.6650    11     success    client             w(a)=w0+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_18_model_6  1478.5218    1559.6772    11     success    client             w(a)=w0+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_18_model_7  1468.0801    1549.2355    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w6*a^2*(1-a)
+gen_18_model_8  1476.5774    1550.3550    10     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2
+gen_18_model_9  1476.6580    1557.8134    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+
+==========================================================================================
+# Generation 19  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_19_model_0  1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_19_model_1  1476.7546    1557.9099    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_19_model_2  1478.5218    1559.6772    11     success    client             w(a)=w0+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_19_model_3  1464.2102    1545.3656    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_19_model_4  1467.6034    1548.7588    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2
+gen_19_model_5  1477.3621    1558.5174    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_19_model_6  1476.6580    1557.8134    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_19_model_7  1469.9484    1551.1038    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_19_model_8  1477.5096    1558.6650    11     success    client             w(a)=w0+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_19_model_9  1477.6360    1558.7913    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3
+
+==========================================================================================
+# Generation 20  (fitness=BIC (chi2 + k*ln(N), N=1600))
+==========================================================================================
+ID              chi2         fitness      k      status     likelihood_backend expr
+------------------------------------------------------------------------------------------
+gen_20_model_0  1462.0159    1535.7935    10     success    client             w(a)=w0+wa*(1-a)+w5*(1-a)^3+w6*a^2*(1-a)
+gen_20_model_1  1478.5218    1559.6772    11     success    client             w(a)=w0+w2*a*(1-a)+w4*a*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_20_model_2  1468.0801    1549.2355    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w6*a^2*(1-a)
+gen_20_model_3  1467.6034    1548.7588    11     success    client             w(a)=w0+wa*(1-a)+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2
+gen_20_model_4  1476.7546    1557.9099    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_20_model_5  1469.9484    1551.1038    11     success    client             w(a)=w0+wa*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)
+gen_20_model_6  1478.1107    1551.8883    10     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w6*a^2*(1-a)
+gen_20_model_7  1477.7183    1551.4959    10     success    client             w(a)=w0+w2*a*(1-a)+w4*a*(1-a)^2+w6*a^2*(1-a)
+gen_20_model_8  1477.3094    1558.4648    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w4*a*(1-a)^2+w5*(1-a)^3
+gen_20_model_9  1476.6580    1557.8134    11     success    client             w(a)=w0+w2*a*(1-a)+w3*(1-a)^2+w5*(1-a)^3+w6*a^2*(1-a)

@@ -1,0 +1,52 @@
+# One-shot CLiENT config for ΛCDM (SN+DESI). Not a GA profile.
+likelihood:
+  wrapper: cobaya
+  param: cobaya_lcdm_sn_desi.yaml
+  conf: null
+  path: null
+
+data:
+  scalers:
+    parameters: standard
+    targets: standard
+  initial:
+    n_samples: 400
+    strategy: lhs
+    n_std: 8.0
+  iterative:
+    n_candidates: 200
+    strategy: adaptive
+    k_NN: 20
+    temperature: 7.0
+    update_freq: 50
+
+model:
+  n_layers: 3
+  n_neurons: 128
+  activation: alsing
+
+training:
+  n_epochs: 250
+  batch_size: 128
+  loss: msre
+  kappa_sigma: 3
+  learning_rate: 0.001
+  val_split: 0.1
+  patience: 40
+
+sampling:
+  save_chains: true
+  temperature: 7.0
+  method: emcee
+  emcee:
+    n_walkers: 32
+    max_steps: 8000
+    burn_in: 500
+    ess_target: 40
+    delta_tau_tol: 0.05
+    chunk_size: 500
+    ac_thin: 10
+
+convergence:
+  r_minus_one_threshold: 0.02
+  max_iterations: 1

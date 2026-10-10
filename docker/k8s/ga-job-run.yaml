@@ -1,0 +1,54 @@
+# One-shot GA Job (runs to completion, then pod stops)
+#
+#   kubectl apply -f docker/k8s/ga-config.yaml
+#   kubectl apply -f docker/k8s/ga-job-run.yaml
+#   kubectl logs -n cosmic-learning -f job/ga-wdm-run
+#
+# Results on PVC: /mnt/ga-run/GA_run.log, gen_*_model_*
+
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ga-wdm-run
+  namespace: cosmic-learning
+spec:
+  backoffLimit: 0
+  template:
+    metadata:
+      labels:
+        app: ga-wdm-run
+    spec:
+      imagePullSecrets:
+        - name: ghcr-secret
+      restartPolicy: Never
+      containers:
+        - name: ga-wdm
+          image: ghcr.io/rebecca-briffa/ga-wdm:latest
+          imagePullPolicy: Always
+          command: ["run-ga"]
+          resources:
+            requests:
+              memory: "64Gi"
+              cpu: "16"
+              nvidia.com/gpu: "1"
+              ephemeral-storage: "10Gi"
+            limits:
+              memory: "128Gi"
+              cpu: "32"
+              nvidia.com/gpu: "1"
+              ephemeral-storage: "20Gi"
+          envFrom:
+            - configMapRef:
+                name: ga-wdm-config
+          env:
+            - name: NVIDIA_VISIBLE_DEVICES
+              value: "all"
+          securityContext:
+            runAsUser: 0
+          volumeMounts:
+            - mountPath: /mnt
+              name: data
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: class-pvc

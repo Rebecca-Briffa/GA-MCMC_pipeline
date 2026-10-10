@@ -1,0 +1,47 @@
+# ConfigMap: GA runtime choices (edit here, not in the Dockerfile).
+#
+#   kubectl apply -f docker/k8s/ga-config.yaml
+#
+# Pods reference this via envFrom (see ga-pod-interactive.yaml).
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ga-wdm-config
+  namespace: cosmic-learning
+data:
+  GA_CLASS_DIR: "/opt/ga-project/class"
+  CLIENT_ROOT: "/opt/client_public"
+  COBAYA_PACKAGES_PATH: "/opt/cobaya_packages"
+  # Fresh output folder for the DIC + 20-shape run
+  GA_PROJECT_ROOT: "/mnt/ga-run12"
+  GA_OUTPUT_DIR: "/mnt/ga-run12"
+  GA_LIKELIHOOD: "client"
+  GA_COBAYA_CONFIG: "sn_desi"
+  CLIENT_PROFILE: "ga_converge"
+  # After GA: auto long CLiENT + GetDist on the winning model (any gen_*_model_*).
+  # Set GA_RUN_POST=0 to skip and run `python post_ga.py` later.
+  GA_RUN_POST: "1"
+  GA_POST_PROFILE: "ga_final_hpc"
+  # GA selection: dic | bic | aic | chi2
+  GA_FITNESS_METRIC: "dic"
+  # Fail models with unconstrained DE coeffs (flat posterior vs prior)
+  GA_REQUIRE_CONSTRAINED: "1"
+  GA_UNCONSTRAINED_FRAC: "0.85"
+  # Effective data count for BIC fallback ≈ Pantheon+ + DESI BAO
+  GA_BIC_N_DATA: "1600"
+  GA_CLIENT_GPU: "auto"
+  CLIENT_TF_GPU_ALLOW_GROWTH: "1"
+  CLIENT_TF_LOG_LEVEL: "2"
+  COBAYA_NOMPI: "1"
+  CLIENT_VALIDATE_MAP: "1"
+  GA_CLIENT_AUTO_GPU_PROFILE: "1"
+  GA_PARALLEL_WORKERS: "2"
+  GA_GPU_IDS: "0,1"
+  GA_INITIAL_CATALOG: "canonical_plus_enumerate"
+  GA_POP_SIZE: "20"
+  GA_NUM_GENERATIONS: "40"
+  GA_NUM_PARENTS_MATING: "12"
+  PYTHONUNBUFFERED: "1"
+  OMP_NUM_THREADS: "4"
+  OMP_PROC_BIND: "true"

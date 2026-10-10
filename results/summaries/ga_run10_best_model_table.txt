@@ -1,0 +1,10 @@
+```
+ga-run10  best model
+
+id      gen_0_model_3
+w(a)    w0 + w3*(1-a)^2
+chi2    1476.89
+k       8
+BIC     1535.91   (N=1600)
+data    Pantheon+SH0ES + DESI DR2
+```

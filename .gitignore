@@ -1,0 +1,49 @@
+# Run outputs (never commit)
+gen_*/
+test_w*/
+runs/
+WORKING*/
+*.log
+GA_summary.txt
+GA_run.log
+
+# Python / CLASS build artefacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+class/python/build/
+class/python/classy.cpython*.so
+class/python/classy.cpp
+class/python/classy.c
+class/build/
+class/libclass.a
+class/main
+class/class
+class/*.o
+class/source/*.o
+class/tools/*.o
+class/main/*.o
+class/cpp/*.o
+class/python/*.so
+class/external/distortions/Greens_data.dat
+
+# Local ΛCDM baseline compiled output
+lcdm_baseline/output/
+
+# Docker data bundles (large — prepare locally)
+docker/data/cobaya_packages/
+docker/data/*.tar.gz
+docker/data/*.tgz
+
+# IDE / OS
+.idea/
+.vscode/
+*Zone*
+.DS_Store
+__MACOSX/
+
+# Secrets / local env
+.env
+*.pem
+ghcr-secret*

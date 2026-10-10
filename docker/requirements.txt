@@ -1,0 +1,22 @@
+# GA pipeline + Cobaya (CPU packages)
+numpy>=2.0,<2.1
+scipy>=1.15
+matplotlib>=3.8
+pandas>=2.0
+pyyaml>=6.0
+cython>=3.0
+sympy>=1.12
+h5py>=3.10
+pygad>=3.3
+cobaya>=3.5
+getdist>=1.7
+emcee>=3.1
+scikit-learn>=1.5
+tqdm>=4.66
+astropy>=6.0
+joblib>=1.4
+threadpoolctl>=3.5
+
+# GPU / CLiENT (TensorFlow with bundled CUDA — needs NVIDIA Container Toolkit at runtime)
+tensorflow[and-cuda]==2.19.0
+tensorflow-probability[tf]==0.25.0
